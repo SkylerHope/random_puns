@@ -13,6 +13,10 @@ A php script I wrote to learn how to use APIs
 <h3>Install random_puns</h3>
 
 ```
+git clone https://github.com/SkylerHope/random_puns.git
+```
+
+```
 cd random_puns
 ```
 
