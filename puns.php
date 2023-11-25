@@ -15,9 +15,12 @@ curl_setopt_array($curl, array(
 
 $response = curl_exec($curl);
 $data = json_decode($response, true);
-/*$outputFile = fopen('response.json', 'w');*/
+$outputFile = fopen('latest output.txt', 'w');
 $punElement = $data['pun'];
 
 curl_close($curl);
 echo $punElement;
+
+fwrite($outputFile, $punElement);
+fclose($outputFile);
 ?>
